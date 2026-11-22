@@ -14,8 +14,8 @@ if(CONFIG_SHIELD_EYELASH_OLED AND CONFIG_NICE_OLED_WIDGET_STATUS)
 
   # Keep the pinned nice!oled widgets and replace only their artwork entry points.
   if(CONFIG_ZMK_SPLIT_ROLE_CENTRAL)
-    zephyr_link_options(-Wl,--wrap=zmk_widget_screen_init)
+    zephyr_link_libraries(-Wl,--wrap=zmk_widget_screen_init)
   else()
-    zephyr_link_options(-Wl,--wrap=draw_animation)
+    zephyr_link_libraries(-Wl,--wrap=draw_animation)
   endif()
 endif()
