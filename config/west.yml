@@ -27,5 +27,8 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: zmk-v0.3.0.0
+    - name: zmk-nice-oled
+      url: https://github.com/mctechnology17/zmk-nice-oled
+      revision: 84a98807fd97f8930859d1eb633966aaec17b72a
   self:
     path: config
