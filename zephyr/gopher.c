@@ -5,7 +5,7 @@
 /* Go Gopher by Renee French, CC BY 4.0. Cropped for the OLED.
  * https://go.dev/doc/gopher/gopherbw.png
  */
-#if IS_ENABLED(CONFIG_NICE_OLED_WIDGET_INVERTED)
+#ifdef CONFIG_NICE_OLED_WIDGET_INVERTED
 #define GOPHER_BG 0x00
 #define GOPHER_FG 0xff
 #else
